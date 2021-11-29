@@ -1,0 +1,14 @@
+#content{
+  width:100%;
+  height:48px;
+  border:1px solid rgb(219, 216, 216);
+  border-radius:4px;
+}
+#contentInside{
+  
+  height:35px;
+  margin:5px;
+    border:1px solid rgb(146, 209, 228);
+  border-radius:4px;
+  display:inline-flex;
+}

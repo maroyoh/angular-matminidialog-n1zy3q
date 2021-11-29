@@ -1,0 +1,21 @@
+<ol>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Create Popup</button>
+  </li>
+  <li *ngIf="animal">You chose: <i>{{animal}}</i></li>
+</ol>
+
+<div id="content">
+  <div id="contentInside" *ngFor="let container of containers">
+    <button
+      mat-raised-button
+      (click)="openDialog(container.dialogId)"
+      (contextmenu)="cerrar(container.dialogId)"
+    >
+      {{container.dialogId}}
+    </button>
+  </div>
+</div>
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
